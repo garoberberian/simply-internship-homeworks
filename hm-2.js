@@ -42,7 +42,6 @@ const matrix2 = [
     return Array.from({length: r}).reduce(a => rotate90degree(a), matrix)
   };
   
-  
   const rotate90degreeWithoutDiagonal = matr => {
       const newmatr = [];
       const l = matr.length;
