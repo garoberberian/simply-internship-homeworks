@@ -16,8 +16,8 @@ lines 34: emptying the three arrays so that for each iteration, only numbers of 
 function solution(grid) {
     let [numsOfEachRow, numsOfEachCol, numsOf3by3Matrix] = [[], [], []];
     let [subgridX, subgridY] = [0,0];
-    for(let i = 0; i < grid.length; i++) {
-        for(let j = 0; j < grid.length; j++) { 
+    for(let i = 0; i < 9; i++) {
+        for(let j = 0; j < 9; j++) { 
             if(
                 numsOfEachRow.includes(grid[i][j]) ||
                 numsOfEachCol.includes(grid[j][i]) ||
@@ -29,12 +29,12 @@ function solution(grid) {
             !isNaN(+grid[j][i]) && numsOfEachCol.push(grid[j][i]);
             !isNaN(+grid[subgridX][subgridY]) && numsOf3by3Matrix.push(grid[subgridX][subgridY]);  
             subgridY++;
-            j % 3 === 2 && ([subgridY, subgridX] = [subgridY-3, subgridX+1]);
+            j % 3 === 2 && ([subgridY, subgridX] = [subgridY - 3, subgridX + 1]);
         }
         [numsOfEachRow, numsOfEachCol, numsOf3by3Matrix] = [[], [], []];
         subgridY += 3;
         i % 3 === 2 &&  (subgridY = 0);
-        i % 3 === 2 ||  (subgridX = subgridX === 3 ? 0 : subgridX-3); 
+        i % 3 === 2 ||  (subgridX = subgridX === 3 ? 0 : subgridX - 3); 
       }
     return true;
   }
