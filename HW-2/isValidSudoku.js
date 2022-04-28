@@ -29,12 +29,12 @@ function solution(grid) {
             !isNaN(+grid[j][i]) && numsOfEachCol.push(grid[j][i]);
             !isNaN(+grid[subgridX][subgridY]) && numsOf3by3Matrix.push(grid[subgridX][subgridY]);  
             subgridY++;
-            !((j+1)%3) && ([subgridY, subgridX] = [subgridY-3, subgridX+1]);
+            j % 3 === 2 && ([subgridY, subgridX] = [subgridY-3, subgridX+1]);
         }
         [numsOfEachRow, numsOfEachCol, numsOf3by3Matrix] = [[], [], []];
         subgridY += 3;
-        !((i+1) % 3) &&  (subgridY = 0);
-        !((i+1) % 3) ||  (subgridX = subgridX === 3 ? 0 : subgridX-3); 
+        i % 3 === 2 &&  (subgridY = 0);
+        i % 3 === 2 ||  (subgridX = subgridX === 3 ? 0 : subgridX-3); 
       }
     return true;
   }
