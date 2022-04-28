@@ -29,7 +29,7 @@ function solution(grid) {
             !isNaN(+grid[j][i]) && numsOfEachCol.push(grid[j][i]);
             !isNaN(+grid[subgridX][subgridY]) && numsOf3by3Matrix.push(grid[subgridX][subgridY]);  
             subgridY++;
-            j && !((j+1)%3) && ([subgridY, subgridX] = [subgridY-3, subgridX+1]);
+            !((j+1)%3) && ([subgridY, subgridX] = [subgridY-3, subgridX+1]);
         }
         [numsOfEachRow, numsOfEachCol, numsOf3by3Matrix] = [[], [], []];
         subgridY += 3;
