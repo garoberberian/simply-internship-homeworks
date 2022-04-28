@@ -8,7 +8,7 @@ lines 21-26: checking if a number exists in any of three arrays, return false
 
 lines 28-30: checking if an element is a number, push to its corresponding array
 
-lines 31-32 and 35-37: logic used so that variables a, b will be correct indexes of each 3by3 matrix  
+lines 31-32 and 35-37: logic used so that variables subgridX, subgridY will be correct indexes of each 3by3 matrix  
 
 lines 34: emptying the three arrays so that for each iteration, only numbers of one row/column/3by3matrix will be pushed and checked
 */
