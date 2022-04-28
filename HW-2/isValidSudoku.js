@@ -2,7 +2,7 @@
 line 17: 3 empty arrays are declared, to push numbers of each row/column/matrix and immediately return false if there are two same numbers in a row/column/3by3matrix
 
 line 18: variables subgridX and subgridY are declared to handle indexes of each 3by3 matrix.
-for example, in first iteration, ab will be 00 01 02   10 11 12   20 21 22. indexes of first 3by3 matrix. 
+for example, in first iteration, subgridX subgridY will be 00 01 02   10 11 12   20 21 22. indexes of first 3by3 matrix. 
 
 lines 21-26: checking if a number exists in any of three arrays, return false 
 
