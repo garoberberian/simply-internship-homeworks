@@ -7,7 +7,7 @@ line 19: roadregister[0][0], roadregister[1][1]... must be false, because there 
 
 line 28: if lengths are not equal, it means the city doesn't have same number of outgoing and incoming roads, return false
 
-line 31, 32: i think the these two lines are not necessary, but the idea is to count the number of trues of each row and each column independently
+line 31, 32: counts the number of trues of each row and each column independently
 
 line 35: if number of trues of each row and column are same, return true
 */
