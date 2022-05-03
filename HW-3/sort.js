@@ -1,8 +1,9 @@
 const sort = input => {
+    const [min, max] = [Math.min(...input), Math.max(...input)];
     const map = new Map();
     let inputClone = [...input];
 
-    for(let i = Math.min(...input); i <= Math.max(...input); i++) {
+    for(let i = min; i <= max; i++) {
         if(inputClone.includes(i)) {
             map.has(i) && map.set(i, [].concat(map.get(i), i));
            !map.has(i) && map.set(i, i);
