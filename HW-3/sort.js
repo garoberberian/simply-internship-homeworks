@@ -1,7 +1,7 @@
 const sort = input => {
     const [min, max] = [Math.min(...input), Math.max(...input)];
     const map = new Map();
-    let inputClone = [...input];
+    const inputClone = [...input];
 
     for(let i = min; i <= max; i++) {
         if(inputClone.includes(i)) {
