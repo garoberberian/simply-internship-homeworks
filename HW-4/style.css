@@ -377,10 +377,20 @@ button {
 
     
 .systems__connecting-lines {
-    top: 100px;
+    top: 120px;
     width: 6px;
-    height:120px;
+    height:140px;
     background-color: #1A1C1E;
+}
+
+.systems__systems__connecting-lines__horizontal-line:nth-child(1) {
+    position: absolute;
+    top: 80px;
+}
+
+.systems__systems__connecting-lines__horizontal-line:nth-child(2) {
+    position: absolute;
+    top: 136px
 }
 
 .systems {
@@ -391,16 +401,6 @@ button {
     width: 50px;
     height: 6px;
     background-color: #1A1C1E;
-}
-
-.systems__systems__connecting-lines__horizontal-line:nth-child(1) {
-    position: absolute;
-    top: 67px
-}
-
-.systems__systems__connecting-lines__horizontal-line:nth-child(2) {
-    position: absolute;
-    top: 120px
 }
 
 .systems__info2{
