@@ -11,7 +11,6 @@
 body {
   width: calc(100% - 68px);
   margin: auto;
-  text-align: center;
   background-color: #1f2224;
 }
 
@@ -287,7 +286,7 @@ body {
 }
 
 .systems__systems__connecting-lines__horizontal-line {
-  width: 40px;
+  width: 26px;
   height: 6px;
   background-color: #1a1c1e;
 }
@@ -316,6 +315,7 @@ body {
 }
 
 .add-system__b {
+  text-align: center;
   margin-top: 76px;
 }
 
@@ -416,30 +416,27 @@ button {
   }
 
   .systems__connecting-lines {
-    top: 120px;
+    top: 288px;
     width: 6px;
-    height: 140px;
+    height: 115px;
     background-color: #1a1c1e;
+    left: 55px;
   }
 
   .systems__systems__connecting-lines__horizontal-line:nth-child(1) {
     position: absolute;
-    top: 80px;
+    top: 56px;
+    width: 40px;
   }
 
   .systems__systems__connecting-lines__horizontal-line:nth-child(2) {
     position: absolute;
-    top: 136px;
+    top: 109px;
+    width: 40px;
   }
 
   .systems {
     position: relative;
-  }
-
-  .systems__systems__connecting-lines__horizontal-line {
-    width: 50px;
-    height: 6px;
-    background-color: #1a1c1e;
   }
 
   .systems__info2 div {
@@ -513,7 +510,8 @@ button {
 }
 
 .free-text, .pro-text, .vip-text {
-    position: absolute;
+  position: absolute;
+  text-align: center;
   width: 56px;
   height: 20px;
   font-size: 14px;
@@ -622,98 +620,7 @@ button {
 }
 
 
-/* 
-.td1::after {
-  content: 'System Name';
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: 12px;
-  font-size: 12px;
-}
-.td2::after {
-    content: 'ID';
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: 30px;
-    font-size: 12px;
-}
-.td3::after {
-  content: 'Created date';
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: 36px;
-  font-size: 12px;
-}
-.td4::after {
-  content: 'Active Licenses';
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: -130px;
-  font-size: 12px;
-  width: 100px;
-} */
 
-.td1::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 10px solid #E5E5E5;
-  left: 15px;
-}
-
-.td1-bb::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  border-top: 6px solid transparent;
-  border-left: 10px solid #E5E5E5;
-  border-bottom: 6px solid transparent;
-
-}
-
-.small {
-  font-size: 12px;
-  text-align: left;
-}
-.small td {
-  padding-bottom: 8px;
-}
-
-.dwnld {
-  text-align: left;
-  background-color: #1A1C1E;
-  border: none;
-  padding-right: 14px;
-}
-
-.short-btn {
-  text-align: left;
-}
-
-.small td1 {
-  padding-left: 15px;
-}
-
-.small-td2 {
-  text-align: right;
-}
-
-.small-td3, .td3-short{
-  text-align: left;
-  padding-left: 81px;
-}
-
-.xyz {
-  padding-top: 5px;
-}
 
 .pro-text, .vip-text {
   opacity: 0.5;
@@ -749,11 +656,132 @@ button {
   left: -5px;
 }
 
-td {
-  overflow-x: auto;
+tr {
+    overflow-x: scroll;
     overflow-y: hidden;
 }
 
 table {
   width: 100%;
+}
+
+.small-td1 {
+  padding-left: 20px;
+}
+
+
+.tddd1 {
+  padding-left: 44px;
+}
+
+.tddd3 {
+  padding-left: 66px;
+}
+.tddd5 {
+  padding-left: 80px;
+}
+
+.tddd7 {
+  padding-left: 76px;
+}
+
+.tddd8 {
+  padding-left: 76px;
+}
+
+.tddd9 {
+  padding-left: 115px;
+}
+
+.tddd11 {
+  padding-left: 15px;
+}
+
+.tddd13 {
+  padding-left: 14px;
+}
+
+.black {
+  background-color: #1A1C1E;
+  color: #D6DDDE;
+}
+
+.tddd10 button, .tddd12 button{
+  padding: 6px 12px;
+}
+
+.lightblack {
+  background-color: #1F2224;
+}
+.arrow-down {
+  position: relative;
+}
+
+
+.arrow-down::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #E5E5E5;
+  left: 19px;
+}
+
+.arrow-right {
+  position: relative;
+}
+.arrow-right::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 17px;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #E5E5E5;
+  border-bottom: 6px solid transparent;
+  left: 19px;
+}
+
+.pad1312 {
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+.pad1213 {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+}
+
+.pad168 {
+  font-size: 12px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.space {
+  padding-top: 6px;
+}
+
+.pad6 {
+  padding-top: 6px;
+}
+
+.pad52 {
+  padding-top: 52px;
+  background-color: #1F2224;
+}
+
+.add-license-btn {
+  border: none;
+  border-radius: 4px;
+  background: #499861;
+
+}
+
+.remove-btn {
+  border: none;
+  background: #CC4343;
+  border-radius: 4px;
 }
