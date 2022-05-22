@@ -1,4 +1,5 @@
-'use strict'
+'use strict';
+
 const navbarTitle = document.querySelector('.navbar__title');
 const plansTexts = document.querySelectorAll('.plans-text');
 const shapes = document.querySelectorAll('.shape');
@@ -40,7 +41,7 @@ const insertTabsTexts = ({tabs}) => {
         servicesTitles[i].innerHTML = tab.title;
         const tabDataLength = Object.keys(tab.data).length;
         if(tabDataLength) {
-            insertSystemsTexts(tab.data.systems)
+            insertSystemsTexts(tab.data.systems);
         }
     });
 }
