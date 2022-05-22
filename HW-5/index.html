@@ -6,27 +6,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./style.css' />
+    <script type="module" src="./index.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="navbar__title">Licenses</h1>
+        <h1 class="navbar__title"></h1>
         <ul class="shapes">
             <li class="shape shape-green">
-                    <span class="free-text">FREE</span>
+                    <span class="plans-text free-text "></span>
                     <div class="top-left-shp top-left-shp--green mm"></div>
                     <div class="top-right-shp top-right-shp-green"></div>
                     <div class="bottom-left-shp bottom-left-shp--green"></div>
                     <div class="bottom-right-shp bottom-right-shp--green"></div>
             </li>
             <li class="shape shape-blue">
-                <span class="pro-text">PRO</span>
+                <span class="plans-text pro-text"></span>
                 <div class="top-left-shp top-left-shp--blue blue"></div>
                 <div class="top-right-shp top-right-shp-blue blue"></div>
                 <div class="bottom-left-shp bottom-left-shp--blue blue"></div>
                 <div class="bottom-right-shp bottom-right-shp--blue blue"></div>
             </li>
             <li class="shape shape-orange">
-                <span class="vip-text">VIP</span>
+                <span class="plans-text vip-text"></span>
                 <div class="top-left-shp top-left-shp--orange orange"></div>
                 <div class="top-right-shp top-right-shp-orange orange"></div>
                 <div class="bottom-left-shp bottom-left-shp--orange orange"></div>
@@ -49,124 +50,156 @@
 
     <section class="systems">
         <h3 class="systems__title">Systems</h3>     
-        <table class="tttt" cellspacing="0">
-        
-            <tr class="trrr black">
-                <td class="tddd1 arrow-down"></td>
-                <td class="tddd2 pad1312">James-Main-Mackbook</td>
-                <td class="tddd3"></td>
-                <td class="tddd4">91520</td>
-                <td class="tddd5"></td>
-                <td class="tddd6">01 Jan 2019</td>
-                <td class="tddd7"></td>
-                <td class="tddd8">2</td>
-                <td class="tddd9"></td>
-                <td class="tddd10">
-                    <button class="add-license-btn">Add License</button>
-                </td>
-                <td class="tddd11"></td>
-                <td class="tddd12">
-                    <button class="remove-btn">Remove</button>
-                </td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr class="trrr lightblack">
-                <td class="tddd1"></td>
-                <td class="tddd2 pad168">Licenses</td>
-                <td class="tddd3"></td>
-                <td class="tddd4"></td>
-                <td class="tddd5"></td>
-                <td class="tddd6 pad168">Expires</td>
-                <td class="tddd7"></td>
-                <td class="tddd8 pad168"></td>
-                <td class="tddd9"></td>
-                <td class="tddd10"></td>
-                <td class="tddd11"></td>
-                <td class="tddd12">
-                </td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr class="trrr black">
-                <td class="tddd1" style="background-color: #1F2224;"></td>
-                <td class="tddd2 pad1213">Jenkins Pro</td>
-                <td class="tddd3"></td>
-                <td class="tddd4"></td>
-                <td class="tddd5"></td>
-                <td class="tddd6">Never</td>
-                <td class="tddd7"></td>
-                <td class="tddd8"></td>
-                <td class="tddd9"></td>
-                <td class="tddd10">        </td>
-                <td class="tddd11"></td>
-                <td class="tddd12">Download</td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr class="trrr lightblack space">
-                <td class="tddd1 pad6"></td>
-                <td class="tddd2"></td>
-                <td class="tddd3"></td>
-                <td class="tddd4"></td>
-                <td class="tddd5"></td>
-                <td class="tddd6"></td>
-                <td class="tddd7"></td>
-                <td class="tddd8"></td>
-                <td class="tddd9"></td>
-                <td class="tddd10"></td>
-                <td class="tddd11"></td>
-                <td class="tddd12"></td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr class="trrr black">
-                <td class="tddd1"  style="background-color: #1F2224;"></td>
-                <td class="tddd2 pad1213">Outfit Pro</td>
-                <td class="tddd3"></td>
-                <td class="tddd4"></td>
-                <td class="tddd5"></td>
-                <td class="tddd6">29 Jul 2021</td>
-                <td class="tddd7"></td>
-                <td class="tddd8"></td>
-                <td class="tddd9"></td>
-                <td class="tddd10">        </td>
-                <td class="tddd11"></td>
-                <td class="tddd12">Download</td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr class="trrr lightblack space">
-                <td class="tddd1 pad52"  style="background-color: #1F2224;;"></td>
-                <td class="tddd2"></td>
-                <td class="tddd3"></td>
-                <td class="tddd4"></td>
-                <td class="tddd5"></td>
-                <td class="tddd6"></td>
-                <td class="tddd7"></td>
-                <td class="tddd8"></td>
-                <td class="tddd9"></td>
-                <td class="tddd10"></td>
-                <td class="tddd11"></td>
-                <td class="tddd12"></td>
-                <td class="tddd13"></td>
-            </tr>
-            <tr></tr>
-            <tr class="trrr black">
-                <td class="tddd1 arrow-right"></td>
-                <td class="tddd2 pad1312">James-Laptop</td>
-                <td class="tddd3"></td>
-                <td class="tddd4">84729</td>
-                <td class="tddd5"></td>
-                <td class="tddd6">15 Jan 2020</td>
-                <td class="tddd7"></td>
-                <td class="tddd8">1</td>
-                <td class="tddd9"></td>
-                <td class="tddd10">
-                    <button class="add-license-btn">Add License</button>
-                </td>
-                <td class="tddd11"></td>
-                <td class="tddd12">
-                    <button class="remove-btn">Remove</button>
-                </td>
-                <td class="tddd13"></td>
-            </tr>
-        </table>
+        <div class="table-hor-scroll">
+            <table class="tttt" cellspacing="0">
+                <tr class="trrr lightblack fs12">
+                    <td class="tddd1"></td>
+                    <td class="tddd2 pad168 pad17 pa">System Name</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4 ta">ID</td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6 pad168">Created date</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8 pad168">Active Licenses</td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10"></td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">
+                    </td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr black">
+                    <td class="tddd1 arrow-down"></td>
+                    <td class="tddd2 pad1312">James-Main-Mackbook</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4">91520</td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6">01 Jan 2019</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8">2</td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10">
+                        <button class="add-license-btn">Add License</button>
+                    </td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr lightblack">
+                    <td class="tddd1"></td>
+                    <td class="tddd2 pad168 pad17">Licenses</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6 pad168">Expires</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8 pad168"></td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10"></td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">
+                    </td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr black">
+                    <td class="tddd1 hor-line" style="background-color: #1F2224;"></td>
+                    <td class="tddd2 pad1213">Jenkins Pro</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6">Never</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8"></td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10">        </td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">Download</td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr lightblack space">
+                    <td class="tddd1 pad6"></td>
+                    <td class="tddd2"></td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6"></td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8"></td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10"></td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12"></td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr black">
+                    <td class="tddd1"  style="background-color: #1F2224;"></td>
+                    <td class="tddd2 pad1213">Outfit Pro</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6">29 Jul 2021</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8"></td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10">        </td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">Download</td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr lightblack space">
+                    <td class="tddd1 pad52"  style="background-color: #1F2224;;"></td>
+                    <td class="tddd2"></td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6"></td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8"></td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10"></td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12"></td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr lightblack fs12">
+                    <td class="tddd1"></td>
+                    <td class="tddd2 pad168 pad17"></td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4 ta"></td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6 pad168">Created date</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8 pad168">Active Licenses</td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10"></td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">
+                    </td>
+                    <td class="tddd13"></td>
+                </tr>
+                <tr class="trrr black">
+                    <td class="tddd1 arrow-right"></td>
+                    <td class="tddd2 pad1312">James-Laptop</td>
+                    <td class="tddd3"></td>
+                    <td class="tddd4">84729</td>
+                    <td class="tddd5"></td>
+                    <td class="tddd6">15 Jan 2020</td>
+                    <td class="tddd7"></td>
+                    <td class="tddd8">1</td>
+                    <td class="tddd9"></td>
+                    <td class="tddd10">
+                        <button class="add-license-btn">Add License</button>
+                    </td>
+                    <td class="tddd11"></td>
+                    <td class="tddd12">
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                    <td class="tddd13"></td>
+                </tr>
+            </table>
+        </div>       
     </section>
 
     <section class="add-system">
@@ -175,12 +208,10 @@
         </p>
         <div class="add-system__container">
             <div class="add-system__b">
-                <div class="add-system__arrow">
-                        <div class="arrow-container">
-                            <div class="arrrow-down"></div>
-                            <div class="aaaa"></div>
-                        </div>                  
-                </div>
+                <label class="arrow-down-container" for="file">
+                    <span class="line"></span>
+                    <span class="arrrrr"></span>
+                </label>
                 <input type="file" name="upload-file" id="file" class="add-system__input"/>
                 <div class="add-system__text">
                     <label class="add-system__text--click" for="file">choose a file</label> to upload or drag it here
@@ -210,13 +241,5 @@
             
         </div>
     </div>
-
-
 </body>
 </html>
-
-    
-
-
-
-
