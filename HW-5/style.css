@@ -574,10 +574,6 @@ table {
   padding: 6px 12px;
 }
 
-.table-data-11 {
-  padding-left: 15px;
-}
-
 .lightblack {
   background-color: #1F2224;
 }
@@ -838,6 +834,10 @@ table {
   left: 5px;
 }
 
+.table-data-11 {
+  padding-left: 10px;
+}
+
 @media screen and (max-width: 1023px) {
   .systems__connecting-lines {
     top: 346px !important ;
@@ -847,9 +847,7 @@ table {
     left: 55px !important;
   }
 
-  .table-data-11 {
-    padding-left: 10px;
-  }
+  
 }
 
 @media screen and (max-width: 951px) {
