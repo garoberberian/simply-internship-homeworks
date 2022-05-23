@@ -1,3 +1,5 @@
+/*systems u subsystems i texter@ himnakan site i vra chkaroxaca avelacnel*/
+/*es arancin html file i vra avelacreci, uzum ei ays cevov avelacnel himnakan html file is mej bayc chkaroxaca*/
 "use strict";
 const table = document.querySelector('.table');
 const fetchData = async (url) => {
@@ -5,7 +7,7 @@ const fetchData = async (url) => {
   return response.json();
 };
 
-const inserSystemsTexts = ({systems}) => {
+const insertSystemsTexts = ({systems}) => {
     systems.forEach(system => {
         const systemsContainer = document.querySelector('.systems-container')
         .content.cloneNode(true);
@@ -21,7 +23,7 @@ const inserSystemsTexts = ({systems}) => {
     });
 }
 
-const inserSubsystemsTexts = ({subsystems}) => {
+const insertSubsystemsTexts = ({subsystems}) => {
     subsystems.forEach(subsystem => {
         const subsystemsContainer = document.querySelector('.subsystems-container')
         .content.cloneNode(true);
@@ -41,8 +43,8 @@ fetchData("./test-data.json").then((data) => {
   tabs.forEach(tab => {
     const dataLength = Object.keys(tab.data).length;
     if (dataLength) {  
-        inserSystemsTexts(tab.data);
-        inserSubsystemsTexts(tab.data);
+        insertSystemsTexts(tab.data);
+        insertSubsystemsTexts(tab.data);
     }
   })
 })
